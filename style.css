@@ -1,0 +1,182 @@
+/* General styles for the whole page */
+body {
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+    line-height: 1.6; /* Improve readability with proper line spacing */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Styles for headings */
+h1, h2 {
+    color: #2c3e50; /* Darker color for headings */
+    text-align: center; /* Center align headings */
+    margin-bottom: 20px; /* Add space below headings */
+}
+
+/* Styles for paragraphs */
+p {
+    margin: 10px 20px; /* Add space around paragraphs */
+    font-size: 1rem; /* Standard font size */
+    color: #2c3e50; /* Darker color for better readability */
+}
+
+/* Styles for ordered lists */
+ol {
+    margin: 20px; /* Add space around the list */
+    padding-left: 40px; /* Indent the list */
+}
+
+ol li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Style for list items */
+li {
+    font-size: 1rem; /* Standard font size */
+    color: #34495e; /* Slightly darker color for list items */
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Box style for sections like "longest words" and "smallest words" */
+.blah {
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 20px; /* Add space inside the box */
+    border-radius: 8px; /* Round the corners */
+    margin: 20px; /* Add space outside the box */
+    border: 1px solid #bdc3c7; /* Add a subtle border */
+}
+
+/* Highlight important text */
+strong {
+    color: #e74c3c; /* Highlight strong text in red */
+    font-weight: bold; /* Ensure bold text */
+}
+
+/* Style for small text */
+small {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #7f8c8d; /* Gray color for small text */
+}
+
+/* Style for links */
+a {
+    color: #3498db; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+}
+
+a:hover {
+    color: #e74c3c; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style for blockquotes */
+blockquote {
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-style: italic; /* Italicize blockquotes */
+    color: #7f8c8d; /* Gray color for blockquotes */
+    border-left: 4px solid #e74c3c; /* Add a red border on the left */
+    padding-left: 15px; /* Add padding inside the blockquote */
+    margin: 20px; /* Add space around blockquotes */
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* Reduce font size for smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    h1 {
+        animation: fadeIn 2s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    nav {
+        background-color: #2c3e50; /* Dark background for the navbar */
+        padding: 10px;
+    }
+    
+    nav ul {
+        list-style: none; /* Remove bullets */
+        display: flex; /* Align items horizontally */
+        justify-content: center; /* Center the navigation items */
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 0 15px; /* Add space between items */
+    }
+    
+    nav ul li a {
+        color: #ecf0f1; /* Light text color */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        color: #e74c3c; /* Highlight on hover */
+    }
+
+    footer {
+        background-color: #2c3e50; /* Dark background */
+        color: #ecf0f1; /* Light text */
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+    .search-bar {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .search-bar input {
+        padding: 10px;
+        width: 200px;
+        border: 1px solid #bdc3c7;
+        border-radius: 4px;
+    }
+    
+    .search-bar button {
+        padding: 10px;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .search-bar button:hover {
+        background-color: #e74c3c;
+    }
+    
+}
+
+.developer-message {
+    background-color: #f1c40f; /* Bright yellow background */
+    color: #2c3e50; /* Dark text color for contrast */
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    padding: 15px; /* Add padding around the text */
+    margin: 20px auto; /* Add space around the box and center it */
+    width: 80%; /* Set the width of the box */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
